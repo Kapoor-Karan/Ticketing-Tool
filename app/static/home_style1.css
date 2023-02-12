@@ -1,0 +1,450 @@
+body {
+    background-color: #0c0c30;
+}
+
+.top-right-corner {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pill-shaped-button {
+    border-radius: 20px;
+    background-color: #333;
+    color: black;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    width: 100px;
+    height: 40px;
+}
+
+.login-button {
+    background-color: #de3a70;
+    border-radius: 20px;
+    margin-right: 100px;
+    width: 160px;
+    height: 40px;
+    font-family: sans-serif;
+}
+
+#about-button {
+    background-color: #de3a70;
+    border-radius: 20px;
+    width: 160px;
+    height: 40px;
+    font-family: sans-serif;
+    /* margin-right: 100px; */
+}
+
+#heading-text {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+#logo-text {
+    color: white;
+    font-size: 20px;
+    padding-left: 100px;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+
+#heading-img {
+    padding-left: 5px;
+    position: relative;
+    padding-top: -10%;
+    margin-top: -3%;
+    margin-left: 2%;
+    float: left;
+}
+
+#introduction-text {
+    color: white;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-left: 10%;
+}
+
+#introduction-image {
+    position: relative;
+    float: right;
+    /* padding-left: 8%; */
+    border-radius: 40px;
+    display: block;
+    margin-top: -14%;
+    margin-left: auto;
+    margin-right: 5%;
+    width: 40%;
+    height: 60%;
+}
+
+
+/* Gender Options */
+
+.gender-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gender-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 60px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: wheat;
+}
+
+.gender-option label {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid orange;
+}
+
+.gender-option input[type="radio"] {
+    display: none;
+}
+
+.gender-option input[type="radio"]:checked+label {
+    background: white;
+}
+
+.gender-option span {
+    margin-top: 10px;
+}
+
+
+/* Age  */
+
+.age-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 29%;
+    background-color: bisque;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    /* Hides the default webkit scrollbar */
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full-width */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: rgb(212, 158, 57);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(212, 158, 57);
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#age-value {
+    font-size: 1.2em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Weight */
+
+.weight-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 29%;
+    background-color: bisque;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    /* Hides the default webkit scrollbar */
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full-width */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: rgb(212, 158, 57);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(212, 158, 57);
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weight-value {
+    font-size: 1.2em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Height */
+
+.height-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 29%;
+    background-color: bisque;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    /* Hides the default webkit scrollbar */
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full-width */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: rgb(212, 158, 57);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(212, 158, 57);
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weight-value {
+    font-size: 1.2em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Marital Status */
+
+.marital_status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marital_status-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 60px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: wheat;
+}
+
+.marital_status-option label {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid orange;
+}
+
+.marital_status-option input[type="radio"] {
+    display: none;
+}
+
+.marital_status-option input[type="radio"]:checked~label {
+    background: white;
+}
+
+.marital_status-option span {
+    margin-top: 10px;
+}
+
+
+/* Annual Income */
+
+.annual_income-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 29%;
+    background-color: bisque;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    /* Hides the default webkit scrollbar */
+    display: flex;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Full-width */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 50%;
+    height: 8px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: rgb(212, 158, 57);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(212, 158, 57);
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: -6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#annual_income-value {
+    font-size: 1.2em;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

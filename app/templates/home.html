@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home_style1.css' %}">
+</head>
+
+<body>
+    <!-- <div id="navbar">
+        <a href="#" id="close_death_btn">Close death</a>
+        <div id="right-side">
+            <a href="#about" id="about-btn">About</a>
+            <a href="#" id="logout-btn">Log Out</a> -->
+
+    <div class="top-right-corner">
+        <button class="pill-shaped-button login-button" id="login-button">Log In</button>
+        <button class="pill-shaped-button about-button" id="about-button">About</button>
+    </div>
+    <div class="heading">
+        <h1 id="logo-text">Close Death</h1>
+        <img id="heading-img" src="{% static '\logo img.png' %} " alt="img ">
+    </div>
+    <br><br><br>
+    <div class="introduction">
+        <h1 id="introduction-text"> Life Expectancy <br> &nbsp &nbsp &nbsp Enhancer</h1>
+        <img id="introduction-image" src='https://source.unsplash.com/1200x400/?phone' class=" d-block w-100 my-4 " alt="... ">
+    </div>
+    <br><br>
+    <!-- Dotted Line Seperation and Heading -->
+    <hr style="border: dotted; width: 100%;">
+    <h2 style="text-align: center; color: #9340ff; font-size: 32px; font-family: sans-serif;">Personal Information</h2>
+    <!-- Options for Personal Information -->
+    <form>
+        <!-- Gender -->
+        <div class="gender-container">
+            <div class="gender-option">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male"></label>
+                <span> Male</span>
+            </div>
+            <div class="gender-option">
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female"></label>
+                <span> Female</span>
+            </div>
+        </div>
+        <h2 id="Gender" style="color:wheat;font-family: sans-serif;font-size: 50px; float: left;
+        position:relative; margin-top: -8%; margin-left:8%; background-color: #a2234d; padding: 10px 15px; border-radius: 12px; ">Gender</h2>
+
+        <!-- Age -->
+        <br><br><br><br><br><br>
+        <label for="age" style="font-size: 40px; font-family: sans-serif; color:wheat; float:left;margin-left:11%;background-color: #a2234d; padding: 10px 15px; border-radius: 12px; margin-top: -2%">Age: </label>
+        <input type="range" min="18 " max="80" value="18" class="age-range " id="age">
+        <span id="age-value "></span>
+
+        <!-- Weight -->
+        <br><br><br><br><br><br>
+        <label for="weight" style="font-size: 40px; font-family: sans-serif; color:wheat; float:left;margin-left:10%;background-color: #a2234d; padding: 10px 15px; border-radius: 12px; margin-top: -2%">Weight </label>
+        <input type="range" min="18 " max="80" value="18" class="weight-range " id="weight">
+        <span id="weight-value "></span>
+
+        <!-- Height -->
+        <br><br><br><br><br><br>
+        <label for="height" style="font-size: 40px; font-family: sans-serif; color:wheat; float:left;margin-left:10%;background-color: #a2234d; padding: 10px 15px; border-radius: 12px; margin-top: -2%">Height </label>
+        <input type="range" min="18 " max="80" value="18" class="weight-range " id="height">
+        <span id="height-value "></span>
+
+
+        <br><br>
+        <hr style="border: dotted; width: 100%;">
+        <h2 style="text-align: center; color: #9340ff; font-size: 32px; font-family: sans-serif;">Life Events</h2>
+
+        <br><br><br><br><br><br><br>
+        <!-- Marital Status -->
+        <div class="marital_status-container">
+            <div class="marital_status-option">
+                <input type="radio" name="marital_status" id="married" value="married">
+                <label for="married"></label>
+                <span> Married</span>
+            </div>
+            <div class="marital_status-option">
+                <input type="radio" name="marital_status" id="not_married" value="not_married">
+                <label for="not_married"></label>
+                <span> Not Married</span>
+            </div>
+            <div class="marital_status-option">
+                <input type="radio" name="marital_status" id="divorced" value="divorced">
+                <label for="divorced"></label>
+                <span> Divorced</span>
+            </div>
+            <div class="marital_status-option">
+                <input type="radio" name="marital_status" id="prefer_not_to_say" value="prefer_not_to_say">
+                <label for="prefer_not_to_say"></label>
+                <span> Prefer not to say</span>
+            </div>
+        </div>
+        <h2 id=" marital_status " style="color:wheat;font-family: sans-serif;font-size: 40px; float: left; position:relative; margin-top: -12%; margin-left:8%; background-color: #a2234d; padding: 10px 15px; border-radius: 12px; ">Marital Status</h2>
+
+        <!-- Annual Income -->
+        <br><br><br><br><br><br>
+        <label for="annual_income" style="font-size: 40px; font-family: sans-serif; color:wheat; float:left;margin-left:11%;background-color: #a2234d; padding: 10px 15px; border-radius: 12px; margin-top: -2%; margin-left:8%">Annual Income: </label>
+        <input type="range" min="18 " max="80" value="18" class="annual_income-range " id="annual_income">
+        <span id="annual_income-value "></span>
+
+    </form>
+
+
+</body>
+
+</html>
